@@ -1,0 +1,103 @@
+.section {
+  background: none
+}
+
+@media screen and (max-width: 768px) {
+  .description {
+    text-align: center
+  }
+}
+
+.container {
+  width: 100%
+}
+
+a {
+  color: #fff
+}
+
+a:hover {
+  color: #fff
+}
+
+.button.is-primary.is-outlined {
+  border-color: #00ccdd;
+  color: #00ccdd
+}
+
+.button.is-primary.is-hovered,
+.button.is-primary:hover {
+  border-color: #00ccdd;
+  color: #00ccdd
+}
+
+.button.is-primary.is-outlined:focus,
+.button.is-primary.is-outlined:hover {
+  background-color: #00ccdd;
+  border-color: #00ccdd;
+  color: #000
+}
+
+.download-link {
+  margin-left: 5px
+}
+
+#linksColumn a {
+  color: #8F2AA3;
+}
+
+.divider {
+  text-transform: none;
+}
+
+.divider.is-info:after,
+.divider.is-info:before {
+  background-color: #8F2AA3;
+}
+
+.cog-loader {
+  animation-name: spin;
+  animation-duration: infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltip-text {
+  visibility: visible;
+  background-color: #222;
+  border-width: 5px;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+}
+
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+
+.download-filename {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
